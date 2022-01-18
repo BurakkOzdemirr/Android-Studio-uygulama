@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:foregroundGravity="center"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Veteriner hekime bu ekrandan soru sorabilirsiniz"
+                android:textColor="@color/textcolor2"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/konuSoruSorEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="2dp"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginRight="30dp"
+                    android:hint="Sorunuzun konusu...." />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="2dp"
+                android:background="@color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/sorusoredittext"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="match_parent"
+
+                    android:hint="Sorunuz...." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/sorusorButon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Soruyu Gönder"
+                android:textColor="@color/deepsea" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

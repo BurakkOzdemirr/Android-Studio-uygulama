@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.AsiDetayFragment">
+
+  <LinearLayout
+      android:layout_marginBottom="15dp"
+      android:background="@color/textcolor3"
+      android:gravity="center"
+      android:layout_alignParentTop="true"
+      android:orientation="horizontal"
+      android:id="@+id/gecmisAsiLayout"
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/asiDetayBackImage"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/back"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"/>
+    <TextView
+        android:textColor="@color/deepsea"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:text="Geçmiş Aşılarınız"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/asiDetayRecView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+  </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
